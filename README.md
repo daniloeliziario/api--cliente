@@ -51,7 +51,6 @@ Cadastro e consulta de clientes:
 ### Pré-requisitos
 
 -	 [JDK 11+](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
--	 [Maven 3](https://maven.apache.org/download.cgi)
 -	 [Lombok 1.18.20](https://projectlombok.org/download)
 
 #### Executando a API localmente
@@ -65,11 +64,11 @@ Cadastro e consulta de clientes:
 
 $ git clone https://github.com/daniloeliziario/api--cliente.git
 
-# Acesse o caminho do projeto e execute o comando Maven:
+# Acesse o caminho do projeto e execute o comando Maven Wrapper:
 
 $ ./mvnw clean install
 
-# O Maven irá gerar um Fat JAR na pasta target 
+# O Maven Wrapper irá gerar um Fat JAR na pasta target 
 
 # Acesse a pasta e execute o comando:
 
@@ -134,7 +133,7 @@ https://github.com/daniloeliziario/api--cliente/tree/main/src/main/resources/col
 ##### Executando os testes da API via Linha de Comando
 
 ```bash
-# Acesse o caminho do projeto e execute o comando Maven:
+# Acesse o caminho do projeto e execute o comando Maven Wrapper:
 
 $ ./mvnw test
 ```
@@ -152,11 +151,11 @@ $ ./mvnw test
 ##### Realizando o Deploy da API via Linha de Comando
 
 ```bash
-# Acesse o caminho do projeto e execute o comando Maven:
+# Acesse o caminho do projeto e execute o comando Maven Wrapper:
 
 $ ./mvnw clean install
 
-# O Maven irá gerar um Fat JAR na pasta target
+# O Maven Wrapper irá gerar um Fat JAR na pasta target
 
 # Esse arquivo já está pronto para ser deployado
 ```
@@ -166,7 +165,7 @@ $ ./mvnw clean install
 ```bash
 # Execute sua IDE e import o código baixado
 
-# Execute o maven com o comando:
+# Execute o Maven com o comando:
 
 $ clean install
 
