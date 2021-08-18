@@ -190,6 +190,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 -   **[Logbook](https://github.com/zalando/logbook/)**
 -   **[Lombok](https://projectlombok.org/)**
 -   **[Rest Assured](https://rest-assured.io/)**
+-   **[Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)**
 
 ---
 
