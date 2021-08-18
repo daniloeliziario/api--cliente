@@ -168,7 +168,7 @@ $ ./mvnw clean install
 
 # Execute o maven com o comando:
 
-$ clean package
+$ clean install
 
 # O Maven irá gerar um Fat JAR na pasta target 
 
