@@ -59,7 +59,6 @@ class ClienteControllerTest {
 	
 	@Test
 	void deveRetornarStatus201QuandoAdicionarClienteComSucesso() {
-		RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 		RestAssured.given()
 			.basePath("/clientes")
 				.body(BODY_JSON_CORRETO)
