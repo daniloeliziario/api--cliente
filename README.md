@@ -59,7 +59,7 @@ Cadastro e consulta de clientes:
 ##### Executando a API localmente via Linha de Comando
 
 ```bash
-(Requisito: Maven e o Java configurado nas variáveis de ambiente)
+(Requisito: Java configurado nas variáveis de ambiente)
 
 # Clone este repositório:
 
@@ -67,7 +67,7 @@ $ git clone https://github.com/daniloeliziario/api--cliente.git
 
 # Acesse o caminho do projeto e execute o comando Maven:
 
-$ mvn clean package
+$ ./mvnw clean install
 
 # O Maven irá gerar um Fat JAR na pasta target 
 
@@ -136,7 +136,7 @@ https://github.com/daniloeliziario/api--cliente/tree/main/src/main/resources/col
 ```bash
 # Acesse o caminho do projeto e execute o comando Maven:
 
-$ mvn test 
+$ ./mvnw test
 ```
 
 ##### Executando os testes da API via IDE
@@ -154,7 +154,7 @@ $ mvn test
 ```bash
 # Acesse o caminho do projeto e execute o comando Maven:
 
-$ mvn clean package
+$ ./mvnw clean install
 
 # O Maven irá gerar um Fat JAR na pasta target
 
