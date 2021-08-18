@@ -70,7 +70,7 @@ $ ./mvnw clean install
 
 # O Maven Wrapper irá gerar um Fat JAR na pasta target 
 
-# Acesse a pasta e execute o comando:
+# Acesse a pasta "target" e execute o comando:
 
 $ java -jar api--cliente-0.0.1-SNAPSHOT.jar
 ```
@@ -109,11 +109,11 @@ $ git clone https://github.com/daniloeliziario/api--cliente.git
 
 # O servidor iniciará na porta:8080 
 
-# Execute o Postman e import a coleção inserida no caminho: 
+# Execute o Postman e import a coleção localizada no caminho: 
 
 https://github.com/daniloeliziario/api--cliente/tree/main/src/main/resources/collections
 
-# A coleção contêm os dois endpoints para execução
+# A coleção contêm os endpoints para execução
 
 # Obs.: Caso ocorra erro 401 insira as credenciais - Login: serasa / Senha: serasa
 ```
@@ -155,7 +155,7 @@ $ ./mvnw test
 
 $ ./mvnw clean install
 
-# O Maven Wrapper irá gerar um Fat JAR na pasta target
+# O Maven Wrapper irá gerar um Fat JAR na pasta "target"
 
 # Esse arquivo já está pronto para ser deployado
 ```
@@ -169,7 +169,7 @@ $ ./mvnw clean install
 
 $ clean install
 
-# O Maven irá gerar um Fat JAR na pasta target 
+# O Maven irá gerar um Fat JAR na pasta "target"
 
 # Esse arquivo já está pronto para ser deployado
 ```
