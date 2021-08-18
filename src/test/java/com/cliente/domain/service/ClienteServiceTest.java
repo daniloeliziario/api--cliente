@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.List;
 
+import static org.apache.commons.lang3.math.NumberUtils.INTEGER_ZERO;
+import static org.apache.commons.lang3.math.NumberUtils.INTEGER_ONE;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,8 +26,6 @@ public class ClienteServiceTest {
 	@Autowired
 	private ClienteService clienteService;
 	
-	private static final Integer QNT_CLIENTES_BASE = 2;
-	
 	@Test
 	void deveValidarSeOTamanhoDoListFoiAlteradoAposAdicionarCliente() {
 				
@@ -34,8 +34,8 @@ public class ClienteServiceTest {
 		
 		List<Cliente> clientes = clienteService.listarTodos();
 		
-		assertNotEquals(clientes.size(), QNT_CLIENTES_BASE);
-		assertEquals(clientes.size(), 3);
+		assertNotEquals(clientes.size(), INTEGER_ZERO);
+		assertEquals(clientes.size(), INTEGER_ONE);
 		
 	}
 	
@@ -74,9 +74,9 @@ public class ClienteServiceTest {
 		assertThrows(RecursoNaoEncontradoException.class, () -> {
 			
 			List<Cliente> clientes = clienteService.listarTodos();
-			assertEquals(clientes.size(), QNT_CLIENTES_BASE);
+			assertEquals(clientes.size(), INTEGER_ZERO);
 			
-			clienteService.buscarOuFalhar(Long.valueOf(1000));
+			clienteService.buscarOuFalhar(Long.valueOf(INTEGER_ONE));
 			
 		});
 		
